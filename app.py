@@ -134,8 +134,8 @@ def handle_text(message):
         url_button2 = types.InlineKeyboardButton(text="Видео №2", url="https://youtu.be/RuZ80TPUF_A")
         keyboard.add(url_button)
         keyboard.add(url_button1,url_button2)
-        bot.send_message(message.chat.id,"В этом разделе я тебе помогу разобраться с принципами роботы\n"
-                                          "Ниже я предоставил тебе оффициальный сайт о Bitcoin и подборку из 2 видео, в каких розсказываеться (Кратко о Bitcoin #1) и (Тех. часть Bitcoin).",reply_markup=keyboard)
+        bot.send_message(message.chat.id,"В этом разделе я помогу разобраться с принципами роботы.\n"
+                                          "Ниже предоставляю ссылку на оффициальный сайт Bitcoin и подборку из видео:\n\n - Кратко о Bitcoin #1\n - Тех. часть Bitcoin #2",reply_markup=keyboard)
     elif message.text=='Международный Форум': #1.3
         bot.send_message(message.chat.id, "Вам не придется больше искать ответы на свои вопросы у ненадежных источников, "
                                           "обратите внимание на  русский раздел крупнейшего криптовлаютного форума. \n\n"

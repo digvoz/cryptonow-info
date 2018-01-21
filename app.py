@@ -14,7 +14,8 @@ def handle_start(message):
                                            'В Чем моя уникальность ?\n\n'
                                            '- Ознакомлю с Криптовалютой\n'
                                            '- Покажу с чего начать\n'
-                                           '- Предоставлю список популярных сервисов\n'
+                                           '- Предоставлю список популярных сервисов\n\n'
+                                           'Для начала нашего с тобой общения, нажми кнопку "Начать"'
                                            .format(message.from_user.first_name), reply_markup=user_markup)
     #bot.send_message(message.chat.id,wallet)
     #arh=wallet.archive_address('1P69cjBUWXT3qvGJCcLmqjXVqqCtWzKorQ')
@@ -134,7 +135,7 @@ def handle_text(message):
         keyboard.add(url_button)
         keyboard.add(url_button1,url_button2)
         bot.send_message(message.chat.id,"В этом разделе я тебе помогу разобраться с принципами роботы\n"
-                                          "Ниже мы предоставили вам оффициальный сайт о Bitcoin и подборку из 2 видео, в каких розсказываеться (Кратко о Bitcoin #1) и (Тех. часть Bitcoin).",reply_markup=keyboard)
+                                          "Ниже я предоставил тебе оффициальный сайт о Bitcoin и подборку из 2 видео, в каких розсказываеться (Кратко о Bitcoin #1) и (Тех. часть Bitcoin).",reply_markup=keyboard)
     elif message.text=='Международный Форум': #1.3
         bot.send_message(message.chat.id, "Вам не придется больше искать ответы на свои вопросы у ненадежных источников, "
                                           "обратите внимание на  русский раздел крупнейшего криптовлаютного форума. \n\n"

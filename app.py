@@ -134,7 +134,7 @@ def handle_text(message):
         url_button2 = types.InlineKeyboardButton(text="Видео №2", url="https://youtu.be/RuZ80TPUF_A")
         keyboard.add(url_button)
         keyboard.add(url_button1,url_button2)
-        bot.send_message(message.chat.id,"В этом разделе я помогу разобраться с принципами роботы.\n"
+        bot.send_message(message.chat.id,"В этом разделе я помогу разобраться с принципами роботы Bitcoin.\n"
                                           "Ниже предоставляю ссылку на оффициальный сайт Bitcoin и подборку из видео:\n\n - Кратко о Bitcoin #1\n - Тех. часть Bitcoin #2",reply_markup=keyboard)
     elif message.text=='Международный Форум': #1.3
         bot.send_message(message.chat.id, "Вам не придется больше искать ответы на свои вопросы у ненадежных источников, "
@@ -336,11 +336,8 @@ def handle_text(message):
                                                "помощью - Минимум 1000% за Год и Максимума не существует.\n\n"
                                                "      *Давайте предположим что средний результат будет\n 3000%/ год, при  вашей"
                                                "максимальной Активности.\n\n"
-                                               "      Ваша сумма  Инвестиции                  Через год\n"
-                                               "      1000$                                                            30 000$\n"
-                                               "      5000$                                                            150 000$\n"
-                                               "      10 000$                                                         300 000$\n"
-                                               "      50 000$                                                         1 500 000$\n", reply_markup=user_markup)
+                                               "      Инвестиция -   1000$\n"
+                                               "      Через год  - 30 000$\n", reply_markup=user_markup)
     elif message.text== '🔙 Вернуться':
         user_markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
         user_markup.row('📄 Начать роботу 📄')
@@ -365,7 +362,7 @@ def handle_text(message):
         url_button1= types.InlineKeyboardButton(text="Сайт Crypto-Now Club", url="https://crypto-now.club")
         keyboard.add(url_button)
         keyboard.add(url_button1)
-        bot.send_message(message.chat.id,"Вы можете следить за нашими новостями в канале Telegram и на нашем Сайте.", reply_markup=keyboard)
+        bot.send_message(message.chat.id,"Следите за новостями на нашем канале Telegram и на нашем сайте.", reply_markup=keyboard)
     elif message.text =='☎ Контакты ☎': #11
         bot.send_message(message.chat.id, 'Тех.обслуживание')
     elif message.text =='💎 НАЧАТЬ ЗАРАБАТЫВАТЬ':
@@ -379,7 +376,7 @@ def handle_text(message):
                                             '7. Следить за сервисом Crypto Now 👀\n'
                                             '8. Вывод Прибыли 💸\n')
     else:
-        bot.send_message(message.chat.id,"Пане {0} ви заблоковані в системі".format(message.from_user.first_name))
+        bot.send_message(message.chat.id,"{0}, вы заблокированы в системе!".format(message.from_user.first_name))
 
 
 

@@ -361,11 +361,11 @@ def handle_text(message):
                                                "Для перехода на нашего бота нажмите ссылку внизу\n\n\n", reply_markup=keyboard)
     elif message.text=='🔖 Новости 🔖':
         keyboard = types.InlineKeyboardMarkup()
-        url_button = types.InlineKeyboardButton(text="Канал Crypto-Now Club", url="https://telegram.me/cryptonowclub")
+        url_button = types.InlineKeyboardButton(text="Канал Crypto-Now Club in Telegram", url="https://telegram.me/cryptonowclub")
         url_button1= types.InlineKeyboardButton(text="Сайт Crypto-Now Club", url="https://crypto-now.club")
-        keyboard.add(url_button,url_button1)
-        bot.send_message(message.chat.id,"Перейдя на наш канал, вы будете постоянно получать новые уведомления о криптобирже.\n"
-                                         "Перейдя на наш сайт, вы изучите полностью всю информацию.", reply_markup=keyboard)
+        keyboard.add(url_button)
+        keyboard.add(url_button1)
+        bot.send_message(message.chat.id,"Вы можете следить за нашими новостями в канале Telegram и на нашем Сайте.", reply_markup=keyboard)
     elif message.text =='☎ Контакты ☎': #11
         bot.send_message(message.chat.id, 'Тех.обслуживание')
     elif message.text =='💎 НАЧАТЬ ЗАРАБАТЫВАТЬ':

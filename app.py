@@ -128,7 +128,7 @@ def handle_text(message):
                                           "специальные криптографические ключи, которые подтверждаются цепочкой блоков – главной "
                                           "учетной книгой системы.\n\n")
     elif message.text=='Принцип роботы': #1.2
-       keyboard = types.InlineKeyboardMarkup()
+        keyboard = types.InlineKeyboardMarkup()
         url_button = types.InlineKeyboardButton(text="Официальный сайт", url="https://bitcoin.org")
         url_button1 = types.InlineKeyboardButton(text="Видео №1", url="https://youtu.be/IdWgvOxjYi8")
         url_button2 = types.InlineKeyboardButton(text="Видео №2", url="https://youtu.be/RuZ80TPUF_A")

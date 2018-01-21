@@ -38,7 +38,6 @@ def handle_menu(message):
     user_markup.row('📈 Курсы 📈', '📊 Биржи 📊')
     user_markup.row('💎 НАЧАТЬ ЗАРАБАТЫВАТЬ 💎')
     user_markup.row('🔖 Новости 🔖', '☎ Контакты ☎')
-    user_markup.row('Test Button')
     bot.send_message(message.from_user.id, "Вы вернулись в начальное меню.", reply_markup=user_markup)
 
 
@@ -376,8 +375,6 @@ def handle_text(message):
                                             '6. Правельный выбор Монет и верная стратегия Торгов 📈\n'
                                             '7. Следить за сервисом Crypto Now 👀\n'
                                             '8. Вывод Прибыли 💸\n')
-    elif message.text=='Test Button':
-        bot.send_message(@cryptonowclub,"Shalom vsem!")
     else:
         bot.send_message(message.chat.id,"{0}, вы заблокированы в системе!".format(message.from_user.first_name))
 

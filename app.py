@@ -1,14 +1,13 @@
 import json
+import telebot
+from telebot import types
 import requests
-import telepot
 
-bot = telepot.Bot ("418894977:AAFzUHXYKVlG6Vt1OIg26r4XL2KH5_p2tdk")
-
+bot = telebot.TeleBot("418894977:AAFzUHXYKVlG6Vt1OIg26r4XL2KH5_p2tdk")
 
 def get_updates_json(request):  
     response = requests.get(request + 'getUpdates')
     return response.json()
-
 
 def last_update(data):  
     results = data['result']

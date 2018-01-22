@@ -37,8 +37,8 @@ def handle_menu(message):
     user_markup.row('🅱 Биткоин', '🅰 Альткоины')
     user_markup.row('🎥 Видео 🎥', '💰 Кошельки 💰')
     user_markup.row('📈 Курсы 📈', '📊 Биржи 📊')
-    user_markup.row('💎 НАЧАТЬ ЗАРАБАТЫВАТЬ 💎')
-    user_markup.row('🔖 Новости 🔖', '☎ Контакты ☎')
+    user_markup.row('🔖 Новости 🔖','💎 НАЧАТЬ ЗАРАБАТЫВАТЬ 💎')
+    user_markup.row('☎ Контакты ☎')
     bot.send_message(message.from_user.id, "Вы вернулись в начальное меню.", reply_markup=user_markup)
 
 
@@ -85,8 +85,8 @@ def handle_text(message):
         user_markup.row('🅱 Биткоин', '🅰 Альткоины')
         user_markup.row('🎥 Видео 🎥', '💰 Кошельки 💰')
         user_markup.row('📈 Курсы 📈', '📊 Биржи 📊')
-        user_markup.row('💎 НАЧАТЬ ЗАРАБАТЫВАТЬ 💎')
-        user_markup.row('🔖 Новости 🔖', '☎ Контакты ☎')
+        user_markup.row('🔖 Новости 🔖', '💎 НАЧАТЬ ЗАРАБАТЫВАТЬ 💎')
+        user_markup.row('☎ Контакты ☎')
         bot.send_message(message.from_user.id, 'О биткоине ', reply_markup=user_markup)
     elif message.text == '🅱 Биткоин': #1
             user_markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -148,8 +148,8 @@ def handle_text(message):
         user_markup.row('🅱 Биткоин', '🅰 Альткоины')
         user_markup.row('🎥 Видео 🎥', '💰 Кошельки 💰')
         user_markup.row('📈 Курсы 📈', '📊 Биржи 📊')
-        user_markup.row('💎 НАЧАТЬ ЗАРАБАТЫВАТЬ 💎')
-        user_markup.row('🔖 Новости 🔖', '☎ Контакты ☎')
+        user_markup.row('🔖 Новости 🔖', '💎 НАЧАТЬ ЗАРАБАТЫВАТЬ 💎')
+        user_markup.row('☎ Контакты ☎')
         bot.send_message(message.from_user.id, "Вы вернулись в начальное меню.", reply_markup=user_markup)
     elif message.text=='🅰 Альткоины': #2
         user_markup = telebot.types.ReplyKeyboardMarkup(resize_keyboard=True)

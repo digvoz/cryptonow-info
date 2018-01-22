@@ -1,7 +1,8 @@
 import json
 import requests
+import telepot
 
-url = "https://api.telegram.org/bot418894977:AAFzUHXYKVlG6Vt1OIg26r4XL2KH5_p2tdk/"
+bot = telepot.Bot ("418894977:AAFzUHXYKVlG6Vt1OIg26r4XL2KH5_p2tdk")
 
 
 def get_updates_json(request):  

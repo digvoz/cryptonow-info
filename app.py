@@ -26,7 +26,7 @@ def handle_start(message):
 @bot.message_handler(commands=['help'])
 def handle_help(message):
     keyboard = types.InlineKeyboardMarkup()
-    url_button = types.InlineKeyboardButton(text="Написать в техподдержку", url="https://telegram.me/siashelp")
+    url_button = types.InlineKeyboardButton(text="Написать в техподдержку", url="https://telegram.me/cryptonowhelp")
     keyboard.add(url_button)
     bot.send_message(message.chat.id,
                      "Если все вышеперечисленное вам не помогло, обращайтесь в техподдержку", reply_markup=keyboard)
@@ -339,7 +339,7 @@ def handle_text(message):
         bot.send_message(message.chat.id, "Предоставляем краткую подборку наших отзывов")
     elif message.text=='📄 Начать роботу 📄': #10.3
         keyboard = types.InlineKeyboardMarkup()
-        url_button = types.InlineKeyboardButton(text="Перейти к платному боту", url="https://telegram.me/siastrade_bot")
+        url_button = types.InlineKeyboardButton(text="Перейти к платному боту", url="https://telegram.me/Cryptonowtrade_bot")
         keyboard.add(url_button)
         bot.send_message(message.chat.id, "Для активации Всех параметров Вам нужно проплатить   месячную подписку на нашем платном боте для "
                                                "использования нашего Полного функционала.\n Сколько вы готовы заплатить за "
@@ -348,8 +348,8 @@ def handle_text(message):
                                                "Для перехода на нашего бота нажмите ссылку внизу\n\n\n", reply_markup=keyboard)
     elif message.text=='🔖 Новости 🔖':
         keyboard = types.InlineKeyboardMarkup()
-        url_button = types.InlineKeyboardButton(text="Канал SIAS Plus в Telegram", url="https://telegram.me/siasplus")
-        url_button1= types.InlineKeyboardButton(text="Сайт SIAS Plus", url="https://sias.plus")
+        url_button = types.InlineKeyboardButton(text="Канал Cryptonow в Telegram", url="https://telegram.me/Cryptonow")
+        url_button1= types.InlineKeyboardButton(text="Сайт Cryptonow", url="https://cryptonow.club")
         keyboard.add(url_button)
         keyboard.add(url_button1)
         bot.send_message(message.chat.id,"Следите за новостями на нашем канале Telegram и на нашем сайте.", reply_markup=keyboard)
@@ -363,7 +363,7 @@ def handle_text(message):
                                             '4. Регистрация на бирже 🖥\n'
                                             '5. Пополнение баланса Биржи 💰\n'
                                             '6. Правельный выбор Монет и верная стратегия Торгов 📈\n'
-                                            '7. Следить за сервисом SIAS Plus 👀\n'
+                                            '7. Следить за сервисом Cryptonow 👀\n'
                                             '8. Вывод Прибыли 💸\n')
     else:
         bot.send_message(message.chat.id,"{0}, вы заблокированы в системе!".format(message.from_user.first_name))
